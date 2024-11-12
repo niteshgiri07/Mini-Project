@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Editor</h1>
+    
+    <!-- Upload Button -->
+    <input type="file" id="upload" accept="image/*">
+    <label for="upload">Upload Image</label>
+    
+    <!-- Image Container -->
+    <div class="editor">
+      <img id="image" src="" alt="Upload an image">
+    </div>
+    
+    <!-- Effects Controls -->
+    <div class="controls">
+      <label>Brightness</label>
+      <input type="range" id="brightness" min="0" max="200" value="100">
+      
+      <label>Contrast</label>
+      <input type="range" id="contrast" min="0" max="200" value="100">
+      
+      <label>Grayscale</label>
+      <input type="range" id="grayscale" min="0" max="100" value="0">
+      
+      <label>Sepia</label>
+      <input type="range" id="sepia" min="0" max="100" value="0">
+      
+      <label>Saturation</label>
+      <input type="range" id="saturate" min="0" max="200" value="100">
+      
+      <label>Hue Rotate</label>
+      <input type="range" id="hue-rotate" min="0" max="360" value="0">
+      
+      <label>Blur Background</label>
+      <input type="checkbox" id="blur-bg">
+      
+      <label>Black & White</label>
+      <input type="checkbox" id="black-white">
+    </div>
+
+    <!-- Reset and Download Buttons -->
+    <div class="buttons">
+      <button id="reset">Reset</button>
+      <button id="download">Download</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
