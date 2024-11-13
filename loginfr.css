@@ -1,0 +1,150 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient Background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for centering the login box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling for the Login Box */
+.login-box {
+    background: rgba(255, 255, 255, 0.8); /* Transparent background with white */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+/* Heading Styling */
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+/* Textbox input fields styling */
+.textbox {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background: #f0f0f0;
+    transition: all 0.3s ease-in-out;
+}
+
+.textbox input:focus {
+    border-color: #6a11cb;
+    background-color: #fff;
+}
+
+/* Checkbox Styling */
+.checkbox {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.checkbox input {
+    margin-right: 8px;
+    transform: scale(1.2);
+}
+
+.checkbox label {
+    color: #555;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #ff6a00, #ee0979); /* Vibrant gradient */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, background 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #ee0979, #ff6a00); /* Reverse gradient on hover */
+    transform: translateY(-5px);
+}
+
+/* Forgot Password Styling */
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a {
+    color: #6a11cb;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: #2575fc;
+}
+
+/* Signup Link Styling */
+.signup {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.signup a:hover {
+    color: #2575fc;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .textbox input, .btn {
+        padding: 10px;
+    }
+}
